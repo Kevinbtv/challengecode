@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="pt_BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Desafio 1 KT</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Lexend+Deca:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style/normalize.css" />
+    <link rel="stylesheet" href="/style/main.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="container">
+        <div class="header-top">
+          <h1>Codelândia</h1>
+          <nav class="header-nav">
+            <ul>
+              <li>blog</li>
+            </ul>
+          </nav>
+          <div class="bg">
+            <img src="/icones/Lupa.svg" alt="" class="lupa" />
+            <input
+              class="pesquisa"
+              type="text"
+              placeholder="Pesquisar no blog"
+            />
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="section-cards">
+        <div class="container">
+          <article class="cards">
+            <div class="bar-article">
+              <p>02 de jul, 2021</p>
+              <img src="/icones/Coração.svg" alt="" />
+            </div>
+
+            <h2>Agora é oficial: o Windows 11 está vindo</h2>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              Vestibulum vestibulum auctor est. Nam vitae finibus ante. Duis
+              lobortis tellus vel diam fringilla, eu ullamcorper ex iaculis.
+            </p>
+          </article>
+
+          <article class="cards">
+            <div class="bar-article">
+              <p>02 de jul, 2021</p>
+              <img src="/icones/Coração.svg" alt="" />
+            </div>
+
+            <h2>Tim Berners-Lee vai leiloar código-fonte da web</h2>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras
+              hendrerit lectus libero, id efficitur arcu viverra ac. Etiam sed
+              sagittis velit, vitae convallis turpis. Praesent in purus non
+              tellus tincidunt fermentum eu at sem. Curabitur lacus libero.
+            </p>
+          </article>
+
+          <article class="cards">
+            <div class="bar-article">
+              <p>02 de jul, 2021</p>
+              <img src="/icones/Coração.svg" alt="" />
+            </div>
+
+            <h2>Tem Firefox novo no pedaço e você vai quer migrar</h2>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              Vestibulum vestibulum auctor est.
+            </p>
+          </article>
+
+          <article class="cards">
+            <div class="bar-article">
+              <p>02 de jul, 2021</p>
+              <img src="/icones/Coração.svg" alt="" />
+            </div>
+
+            <h2>John MCAfee, criador do antivírus McAfee, morre</h2>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras
+              hendrerit lectus libero, id efficitur arcu viverra ac. Etiam sed
+              sagittis velit, vitae convallis turpis. Praesent in purus non
+              tellus tincidunt fermentum eu at sem. Curabitur lacus libero.
+            </p>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <p>Kevin Tavares Version :)</p>
+    </footer>
+  </body>
+
+  <script src="https://unpkg.com/scrollreveal"></script>
+
+  <script>
+    const sr = ScrollReveal({
+      origin: 'top',
+      distance: '50px',
+      duration: 2000,
+      reset: true
+    })
+
+    ScrollReveal().reveal('.header', { delay: 100 })
+    ScrollReveal().reveal('.cards', { delay: 200 })
+    ScrollReveal().reveal('footer', { delay: 200 })
+  </script>
+</html>
