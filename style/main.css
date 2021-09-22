@@ -6,22 +6,18 @@
   --lex: 'Lexend Deca';
 }
 
+.header-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.4rem;
+}
+
 .header-top h1 {
   font-size: 1.125rem;
   color: white;
   font-family: var(--lex);
   font-weight: 400;
-}
-
-.header-nav {
-  /* background-color: red; */
-  margin-bottom: 1.875rem;
-}
-
-.header-nav ul {
-  display: flex;
-  justify-content: end;
-  margin-top: -1.875rem;
 }
 
 .header-nav ul li {
@@ -35,35 +31,39 @@
 .bg {
   display: flex;
   justify-content: center;
+  flex-direction: row-reverse;
 }
 
-.pesquisa {
+.bg:focus {
+  background-color: red;
+}
+
+.bg input {
+  padding: 10px;
+  width: 100%;
+  background: rgba(255, 255, 255, 0.2);
   border: none;
-  background-color: rgba(255, 255, 255, 0.26);
-  flex-grow: 1;
-  border-end-end-radius: 0.3125rem;
-  border-top-right-radius: 0.3125rem;
-}
-
-.pesquisa:focus {
-  /* box-shadow: 0 0 0 0;
-  border: 0 none; */
-  outline: 0;
-}
-
-.pesquisa::placeholder {
-  color: rgba(255, 255, 255, 0.424);
-  /* font-size: 500px; */
-  text-align: left;
+  border-radius: 0 5px 5px 0;
+  color: white;
   font-family: 'Inter';
-  font-weight: 500;
 }
 
-.lupa {
-  background-color: rgba(255, 255, 255, 0.26);
-  padding: 0.625rem;
-  border-bottom-left-radius: 0.3125rem;
-  border-top-left-radius: 0.3125rem;
+.bg input::placeholder {
+  color: rgba(255, 255, 255, 0.2);
+  font-family: 'Inter';
+}
+
+.bg input:focus {
+  outline: none;
+}
+
+.bg button {
+  background: rgba(255, 255, 255, 0.2);
+  border: none;
+  border-radius: 5px 0 0 5px;
+  color: white;
+  font-weight: normal;
+  cursor: pointer;
 }
 
 .section-cards {
